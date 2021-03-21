@@ -1,5 +1,13 @@
-Establishing a prototype for a BI / DW system that will support the decision-making processes in the organization, 
-and its purpose is practical experience in the tools and techniques learned during the course. 
+=========================================================================================
+	 	     ETL by Talend for ASOS by Yarden Revivo
+=========================================================================================
+
+In this project I established a prototype for a BI / DW system that will support the decision-making processes in ASOS, 
+and its purpose is practical experience in the tools and techniques of the Business Intelligent field. 
 The project is based on the selection of raw databases, which reflect business processes in a particular business environment, 
 and the construction of a data management system that will enable the construction of business intelligence applications to support management 
 decisions related to these processes.
+
+=========================================================================================
+
+
