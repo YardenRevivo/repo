@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90F25EAC-563E-4E93-B7B5-867BE78289E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication2</RootNamespace>
+    <AssemblyName>WindowsFormsApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities.cs" />
+    <Compile Include="Activity.cs" />
+    <Compile Include="ActivityRoom.cs" />
+    <Compile Include="Assign_Activities_To_The_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Activities_To_The_Schedule.Designer.cs">
+      <DependentUpon>Assign_Activities_To_The_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_Activity_To_A_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Activity_To_A_Room.Designer.cs">
+      <DependentUpon>Assign_Activity_To_A_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assign_Counserlor_To_An_Activity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign_Counserlor_To_An_Activity.Designer.cs">
+      <DependentUpon>Assign_Counserlor_To_An_Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounselorMenu.Designer.cs">
+      <DependentUpon>CounselorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorOrderMterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounselorOrderMterial.Designer.cs">
+      <DependentUpon>CounselorOrderMterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounselorTechnicalFaliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounselorTechnicalFaliers.Designer.cs">
+      <DependentUpon>CounselorTechnicalFaliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmbedActivityToActivityRoom.cs" />
+    <Compile Include="EmbedEmployeeToActivity.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeStatus.cs" />
+    <Compile Include="EmployeeType.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs" />
+    <Compile Include="MaterialsPerActivity.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_Materials.Designer.cs">
+      <DependentUpon>Order_Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomStatus.cs" />
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="TechnicalFailure.cs" />
+    <Compile Include="Unserviceable_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unserviceable_Room.Designer.cs">
+      <DependentUpon>Unserviceable_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="\\SpaceWare.bgu.ac.il\yardenre\Documents\Visual Studio 2015\Projects\11.6.2019 16.00.cs" />
+    <EmbeddedResource Include="Assign_Activities_To_The_Schedule.resx">
+      <DependentUpon>Assign_Activities_To_The_Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_Activity_To_A_Room.resx">
+      <DependentUpon>Assign_Activity_To_A_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assign_Counserlor_To_An_Activity.resx">
+      <DependentUpon>Assign_Counserlor_To_An_Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounselorMenu.resx">
+      <DependentUpon>CounselorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounselorOrderMterial.resx">
+      <DependentUpon>CounselorOrderMterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounselorTechnicalFaliers.resx">
+      <DependentUpon>CounselorTechnicalFaliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_Materials.resx">
+      <DependentUpon>Order_Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Unserviceable_Room.resx">
+      <DependentUpon>Unserviceable_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-evrika.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-1.1.0.css" />
+    <Content Include="Content\bootstrap-1.1.0.min.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.css" />
+    <Content Include="Scripts\bootstrap-datetimepicker.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
