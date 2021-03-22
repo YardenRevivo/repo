@@ -1,0 +1,28 @@
+=========================================================================================
+	 	     Police Unit - Object Oriented Java programming project by Yarden Revivo
+=========================================================================================
+
+The main subject of the project is to practice creating classes, constructors, methods and using them by creating and running object instances.
+Practice of inheritance, polymorphism, aggregation and encapsulation.
+Use of abstract classes and interfaces and use of exception.
+
+The goal of this exercise is to experiment with "simultaneous" programming and synchronization between threads, 
+using different tools. This project focuses on aspects of the principles of object-oriented software development.
+
+The backgroung story:
+In this project, I implemented the array of calls that come to the PoliceUnit call center for the application, 
+and computerize the work process from the stage of reporting the event to the end.
+
+Process description in general:
+Calls for reporting crime incidents come in line for calls. There are 5 call centers that receive the calls. 
+Each call includes information about the report (address, severity of the incident, etc.). 
+The caller who receives the call creates an event in the system that includes the details received in the call. 
+The call centers enter the events as "criminal incidents", in the order in which the reports arrive. 
+There are 3 event handlers responsible for pulling the events out of line and converting the event address miles away from the station and tracking the various events. 
+Immediately afterwards, the person in charge of the event forwards the event to the station's information system. 
+There are 3 station workers responsible for calculating the number and type of vehicles that will be sent to the event. 
+After calculating the number of vehicles, the station staff puts the event in line for events waiting to be shipped. 
+Then, there are 5 mission commanders who pull the events out of this queue and drive with the help of the vehicles, depending on the event.
+
+=========================================================================================
+
